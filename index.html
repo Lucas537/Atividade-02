@@ -60,43 +60,56 @@
         
             </div>
            
-            <div class="mb-3">
-                <label for="senha" class="form-label">Hobbies:</label>
-                <br>
-                <input type="radio" id="Hobbies" name="Hobbies" required>
-                <label for="Hobbies"> Futebol </label>
-                <br>
-                <input type="radio" id="Hobbies" name="Hobbies" required>
-                <label for="Hobbies"> Xadrez </label>
-                <br>
-                <input type="radio" id="Hobbies" name="Hobbies" required>
-                <label for="Hobbies"> Esportes </label>
-                <br>
-                <input type="radio" id="Hobbies" name="Hobbies" required>
-                <label for="Hobbies"> Música </label>
-                <br>
-                <input type="radio" id="Hobbies" name="Hobbies" required>
-                <label for="Hobbies"> Cinema </label>
-                <br>
-                <input type="radio" id="Hobbies" name="Hobbies" required>
-                <label for="Hobbies"> Leitura </label>
-                <br>
-                
-            </div>
-
-        </select>
-            
-
-
-            <div class="mb-3">
-                <label for="mensagem" class="form-label">Observação: </label>
-                <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Voltar</button>
-            <button type="submit" class="btn btn-primary">Limpar</button>
-            <button type="submit" class="btn btn-primary">Salvar</button>
-        </form>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+            <fieldset class="mb-3">
+                <legend class="col-form-label">Hobbies</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Futebol" value="Futebol">
+                  <label class="form-check-label" for="Futebol">
+                    Futebol
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="xadrez" value="xadrez">
+                  <label class="form-check-label" for="xadrez">
+                    Xadrez
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="esporte" value="esporte">
+                  <label class="form-check-label" for="esporte">
+                    Esportes
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Musica" value="Musica">
+                  <label class="form-check-label" for="Musica">
+                    Música
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Cinema" value="Cinema">
+                  <label class="form-check-label" for="cinema">
+                    Cinema
+                  </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Leitura" value="Leitura">
+                  <label class="form-check-label" for="Leitura">
+                    Leitura
+                  </label>
+                </div>
+              </fieldset>
+        
+              <div class="mb-3">
+                <label for="observacao" class="form-label">Observação</label>
+                <textarea class="form-control" id="observacao" rows="4" placeholder="Digite suas observações ou comentários aqui"></textarea>
+              </div>
+        
+              <div class="d-flex justify-content-between mt-4">
+                <a href="#" class="btn btn-secondary">Voltar</a>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-success">Salvar</button>
+              </div>
+            </form>
+          </div>
+        </body>
+        </html>
